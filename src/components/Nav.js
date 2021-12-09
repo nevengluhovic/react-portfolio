@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+
 function Nav() {
   return (
     <StyledNav>
@@ -32,9 +33,13 @@ const StyledNav = styled.nav`
   align-items: center;
   padding: 1rem 10rem;
   background: #292929;
+  position: sticky;
+  top: 0;
+  z-index: 10;
   a {
     text-decoration: none;
     color: white;
+    font-size: 1rem;
   }
   ul {
     list-style: none;
@@ -42,11 +47,11 @@ const StyledNav = styled.nav`
   }
   #logo {
     font-family: "lobster", "incursive";
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: lighter;
   }
   li {
-    padding-left: 10rem;
+    padding-left: 5rem;
     position: relative;
   }
 `;
